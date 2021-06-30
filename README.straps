@@ -1,0 +1,38 @@
+Beckhoff SPI interface during EEPROM Emulation mode 
+ EE_EMUL_SPI3 (PD) sampling edge
+ EE_EMUL_SPI2 (PD) SCS polarity (0-> active lo, 1-> active hi)
+ EE_EMUL_SPI1 (PU) [1:0] SPI mode (0..3)
+ EE_EMUL_SPI0 (PU)
+
+External MII Bus Timing
+ TX_SHIFT1 (PU)
+ TX_SHIFT0 (PU)
+
+Default phy mode (aneg/amdix)
+   0-> aneg+amdix enabled  (by default)
+   1-> aneg+amdix disabled (by default)
+ 100FD_B(PD) (strap pin only when in 3-port mode) LEDPOL4 pin in 2-port mode
+    polarity of ERRLED
+ 100FD_A(PD) (strap pin only when in 3-port mode)
+
+EEPROM Emulation ALELO polarity
+ EE_EMUL_ALELO_POL(PU) set HBI ALE polarity until EEPROM is loaded (emul mode)
+ 
+EEPROM Emulation
+
+  EE_EMUL2 [2:0] Select default PDI in eeprom emulation mode
+  EE_EMUL1
+  EE_EMUL0 / E2PSIZE  (eeprom size if real eeprom)
+
+MII_LINKPOL/LINKPOL2(PU)
+
+Chip mode (3-port vs 2-port)
+  CHIP_MODE1/LEDPOL1/LINKACTLED1(PU)  (polarity for link activity LED)
+  CHIP_MODE0/LEDPOL0/LINKACTLED0(PU)
+
+Clock
+  CLK_25_EN/XTAL_MODE(mid)  lo -> xtal/clk25_dis, mid -> xtal/clk25_en, hi ->osc/clk25_en
+  
+
+NOTE: polarity of LED can still be changed in registers; strapping only
+      determines the default!

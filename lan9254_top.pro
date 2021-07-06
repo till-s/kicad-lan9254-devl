@@ -255,7 +255,7 @@ dPairWidth=0.2794
 dPairGap=0.1778
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=diffp
+Name=diffp_ec
 Clearance=0.0889
 TrackWidth=0.0889
 ViaDiameter=0.4

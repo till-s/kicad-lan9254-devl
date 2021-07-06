@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 8 11
 Title ""
 Date ""
 Rev ""
@@ -604,6 +604,7 @@ P 7150 3550
 AR Path="/6105B935" Ref="#FLG?"  Part="1" 
 AR Path="/60DB2574/6105B935" Ref="#FLG?"  Part="1" 
 AR Path="/60DB2574/60DC28BD/6105B935" Ref="#FLG?"  Part="1" 
+AR Path="/60E70F2C/60DC28BD/6105B935" Ref="#FLG?"  Part="1" 
 F 0 "#FLG?" H 7150 3625 50  0001 C CNN
 F 1 "PWR_FLAG" H 7150 3723 50  0000 C CNN
 F 2 "" H 7150 3550 50  0001 C CNN

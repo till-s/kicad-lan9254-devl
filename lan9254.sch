@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -549,8 +549,6 @@ $EndComp
 Wire Wire Line
 	8050 4900 8050 5000
 Wire Wire Line
-	6950 4550 7500 4550
-Wire Wire Line
 	7650 4550 7650 4700
 Wire Wire Line
 	6950 4450 8050 4450
@@ -559,34 +557,30 @@ Wire Wire Line
 $Comp
 L Device:C_Small C19
 U 1 1 60E78D0A
-P 7650 3800
-F 0 "C19" H 7742 3846 50  0000 L CNN
-F 1 "100n" H 7742 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7650 3800 50  0001 C CNN
-F 3 "~" H 7650 3800 50  0001 C CNN
-	1    7650 3800
+P 7900 3800
+F 0 "C19" H 7992 3846 50  0000 L CNN
+F 1 "100n" H 7992 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7900 3800 50  0001 C CNN
+F 3 "~" H 7900 3800 50  0001 C CNN
+	1    7900 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L lan9254_project:GND #PWR?
 U 1 1 60E78EE6
-P 7650 4000
+P 7900 3900
 AR Path="/60DC28BD/60E78EE6" Ref="#PWR?"  Part="1" 
 AR Path="/60E78EE6" Ref="#PWR?"  Part="1" 
 AR Path="/60DB2574/60E78EE6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7650 3750 50  0001 C CNN
-F 1 "GND" H 7655 3827 50  0000 C CNN
-F 2 "" H 7650 4000 50  0001 C CNN
-F 3 "" H 7650 4000 50  0001 C CNN
-	1    7650 4000
+F 0 "#PWR?" H 7900 3650 50  0001 C CNN
+F 1 "GND" H 7905 3727 50  0000 C CNN
+F 2 "" H 7900 3900 50  0001 C CNN
+F 3 "" H 7900 3900 50  0001 C CNN
+	1    7900 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7650 3900 7650 4000
-Wire Wire Line
-	6950 3550 7500 3550
-Wire Wire Line
-	7650 3550 7650 3700
+	7900 3550 7900 3700
 $Comp
 L Device:C_Small C6
 U 1 1 60E7DFB5
@@ -664,28 +658,20 @@ Wire Wire Line
 $Comp
 L lan9254_project:+1V8 #PWR?
 U 1 1 60E92892
-P 7650 3450
+P 7900 3450
 AR Path="/60DC28BD/60E92892" Ref="#PWR?"  Part="1" 
 AR Path="/60E92892" Ref="#PWR?"  Part="1" 
 AR Path="/60DB2574/60E92892" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7650 3300 50  0001 C CNN
-F 1 "+1V8" H 7665 3623 50  0000 C CNN
-F 2 "" H 7650 3450 50  0001 C CNN
-F 3 "" H 7650 3450 50  0001 C CNN
-	1    7650 3450
+F 0 "#PWR?" H 7900 3300 50  0001 C CNN
+F 1 "+1V8" H 7915 3623 50  0000 C CNN
+F 2 "" H 7900 3450 50  0001 C CNN
+F 3 "" H 7900 3450 50  0001 C CNN
+	1    7900 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7650 3450 7650 3550
-Connection ~ 7650 3550
-Wire Wire Line
-	7500 3550 7500 4550
-Connection ~ 7500 3550
-Wire Wire Line
-	7500 3550 7650 3550
-Connection ~ 7500 4550
-Wire Wire Line
-	7500 4550 7650 4550
+	7900 3450 7900 3550
+Connection ~ 7900 3550
 $Comp
 L Device:C_Small C5
 U 1 1 60EA1115
@@ -740,7 +726,7 @@ U 1 1 60EC9EC9
 P 2050 5300
 F 0 "C4" H 1850 5350 50  0000 L CNN
 F 1 "470p" H 1800 5250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2050 5300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2050 5300 50  0001 C CNN
 F 3 "~" H 2050 5300 50  0001 C CNN
 	1    2050 5300
 	1    0    0    -1  
@@ -1410,4 +1396,112 @@ Wire Wire Line
 Wire Wire Line
 	1600 3850 1800 3850
 Connection ~ 1800 3850
+$Sheet
+S 1800 7200 550  300 
+U 60EF9F81
+F0 "IO_driver_1" 50
+F1 "IO_driver.sch" 50
+F2 "DATA" B L 1800 7350 50 
+F3 "DIR" I L 1800 7250 50 
+$EndSheet
+$Sheet
+S 3200 7200 550  300 
+U 60E556C7
+F0 "IO_driver_2" 50
+F1 "IO_driver.sch" 50
+F2 "DATA" B L 3200 7350 50 
+F3 "DIR" I L 3200 7250 50 
+$EndSheet
+Text HLabel 3100 7250 0    50   Input ~ 0
+FPGA_IO2_DIR
+Text HLabel 3100 7350 0    50   BiDi ~ 0
+FPGA_IO2_DAT
+Text HLabel 1700 7350 0    50   BiDi ~ 0
+FPGA_IO1_DAT
+Text HLabel 1700 7250 0    50   Input ~ 0
+FPGA_IO1_DIR
+Wire Wire Line
+	1700 7350 1800 7350
+Wire Wire Line
+	1700 7250 1800 7250
+Wire Wire Line
+	3100 7250 3200 7250
+Wire Wire Line
+	3100 7350 3200 7350
+$Comp
+L Connector:TestPoint TP1
+U 1 1 60E57CD1
+P 6000 2200
+F 0 "TP1" H 6050 2300 50  0000 L CNN
+F 1 "TDO" H 6250 2300 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 6200 2200 50  0001 C CNN
+F 3 "~" H 6200 2200 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60E58942
+P 7350 3650
+F 0 "TP2" V 7304 3838 50  0000 L CNN
+F 1 "TDI" V 7300 4000 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 7550 3650 50  0001 C CNN
+F 3 "~" H 7550 3650 50  0001 C CNN
+	1    7350 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 4550 7650 4550
+$Comp
+L lan9254_project:+1V8 #PWR?
+U 1 1 60E5950A
+P 7650 4350
+AR Path="/60DC28BD/60E5950A" Ref="#PWR?"  Part="1" 
+AR Path="/60E5950A" Ref="#PWR?"  Part="1" 
+AR Path="/60DB2574/60E5950A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7650 4200 50  0001 C CNN
+F 1 "+1V8" H 7665 4523 50  0000 C CNN
+F 2 "" H 7650 4350 50  0001 C CNN
+F 3 "" H 7650 4350 50  0001 C CNN
+	1    7650 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4550 7650 4350
+Connection ~ 7650 4550
+Wire Wire Line
+	6950 3550 7900 3550
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60E83DE3
+P 7350 3950
+F 0 "TP3" V 7304 4138 50  0000 L CNN
+F 1 "TCK" V 7300 4300 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 7550 3950 50  0001 C CNN
+F 3 "~" H 7550 3950 50  0001 C CNN
+	1    7350 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60E841F7
+P 7350 4050
+F 0 "TP4" V 7304 4238 50  0000 L CNN
+F 1 "TMS" V 7300 4400 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 7550 4050 50  0001 C CNN
+F 3 "~" H 7550 4050 50  0001 C CNN
+	1    7350 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 60E8477A
+P 7900 3550
+F 0 "TP5" V 7854 3738 50  0000 L CNN
+F 1 "REF" V 7850 3900 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 8100 3550 50  0001 C CNN
+F 3 "~" H 8100 3550 50  0001 C CNN
+	1    7900 3550
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

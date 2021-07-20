@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 12
+Sheet 10 12
 Title ""
 Date ""
 Rev ""
@@ -109,14 +109,10 @@ $EndComp
 Wire Wire Line
 	3850 1850 4050 1850
 Connection ~ 4050 1850
-Text HLabel 3250 1850 0    50   BiDi ~ 0
+Text HLabel 2500 1850 0    50   BiDi ~ 0
 DATA
-Wire Wire Line
-	3250 1850 3500 1850
-Text HLabel 3250 2150 0    50   Input ~ 0
+Text HLabel 2500 2150 0    50   Input ~ 0
 DIR
-Wire Wire Line
-	3250 2150 3600 2150
 $Comp
 L Device:C_Small C2001
 U 1 1 60F2A5CB
@@ -340,7 +336,7 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 60E4921E
-P 3600 2350
+P 3500 2350
 AR Path="/60DC28BD/60E4921E" Ref="R?"  Part="1" 
 AR Path="/60E4921E" Ref="R?"  Part="1" 
 AR Path="/60DB2574/60E4921E" Ref="R?"  Part="1" 
@@ -348,22 +344,13 @@ AR Path="/60DB2574/60EF9F81/60E4921E" Ref="R2002"  Part="1"
 AR Path="/60DB2574/60E556C7/60E4921E" Ref="R2052"  Part="1" 
 AR Path="/60E70F2C/60EF9F81/60E4921E" Ref="R2002"  Part="1" 
 AR Path="/60E70F2C/60E556C7/60E4921E" Ref="R2052"  Part="1" 
-F 0 "R2052" H 3659 2396 50  0000 L CNN
-F 1 "2k2" H 3659 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3600 2350 50  0001 C CNN
-F 3 "~" H 3600 2350 50  0001 C CNN
-	1    3600 2350
+F 0 "R2052" H 3559 2396 50  0000 L CNN
+F 1 "2k2" H 3559 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 2350 50  0001 C CNN
+F 3 "~" H 3500 2350 50  0001 C CNN
+	1    3500 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 2250 3600 2150
-Connection ~ 3600 2150
-Wire Wire Line
-	3600 2150 4100 2150
-Wire Wire Line
-	3600 2450 3600 2550
-Wire Wire Line
-	3600 2550 4500 2550
 Connection ~ 4500 2550
 Wire Wire Line
 	4500 2550 4500 2600
@@ -387,7 +374,6 @@ F 3 "~" H 3500 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3500 1600 3500 1850
-Connection ~ 3500 1850
 Wire Wire Line
 	3500 1850 3650 1850
 Wire Wire Line
@@ -397,4 +383,18 @@ Wire Wire Line
 Connection ~ 4400 1300
 Wire Wire Line
 	4400 1300 4400 1350
+Wire Wire Line
+	3500 2150 3500 2250
+Wire Wire Line
+	3500 2150 4100 2150
+Wire Wire Line
+	3500 2450 3500 2550
+Wire Wire Line
+	3500 2550 4500 2550
+Wire Wire Line
+	2500 2150 3500 2150
+Connection ~ 3500 2150
+Wire Wire Line
+	2500 1850 3500 1850
+Connection ~ 3500 1850
 $EndSCHEMATC

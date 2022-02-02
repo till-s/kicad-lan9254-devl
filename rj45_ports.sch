@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 12
+Sheet 5 18
 Title ""
 Date ""
 Rev ""
@@ -265,28 +265,6 @@ F 1 "GND" H 3205 2977 50  0000 C CNN
 F 2 "" H 3200 3150 50  0001 C CNN
 F 3 "" H 3200 3150 50  0001 C CNN
 	1    3200 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2209
-U 1 1 60E01790
-P 5350 1350
-F 0 "R2209" H 5409 1396 50  0000 L CNN
-F 1 "100" H 5409 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 1350 50  0001 C CNN
-F 3 "~" H 5350 1350 50  0001 C CNN
-	1    5350 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L lan9254_project:+3V3 #PWR?
-U 1 1 60E04837
-P 5600 1100
-F 0 "#PWR?" H 5600 950 50  0001 C CNN
-F 1 "+3V3" H 5615 1273 50  0000 C CNN
-F 2 "" H 5600 1100 50  0001 C CNN
-F 3 "" H 5600 1100 50  0001 C CNN
-	1    5600 1100
 	1    0    0    -1  
 $EndComp
 Text HLabel 1750 1350 0    50   Input ~ 0
@@ -590,17 +568,6 @@ F 3 "" H 4900 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L lan9254_project:+1V8 #PWR?
-U 1 1 60E6480F
-P 4900 1150
-F 0 "#PWR?" H 4900 1000 50  0001 C CNN
-F 1 "+1V8" H 4915 1323 50  0000 C CNN
-F 2 "" H 4900 1150 50  0001 C CNN
-F 3 "" H 4900 1150 50  0001 C CNN
-	1    4900 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG?
 U 1 1 6105B935
 P 7150 3550
@@ -618,19 +585,8 @@ $EndComp
 Wire Wire Line
 	7150 3550 7150 3700
 Connection ~ 7150 3700
-$Comp
-L fmc:74LVC1G06 U2201
-U 1 1 61143898
-P 4900 1350
-F 0 "U2201" H 4650 1600 50  0000 L CNN
-F 1 "74LVC1G06" H 4300 1450 50  0000 L CNN
-F 2 "proj_footprints:SOT-5x3" H 4900 1350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 1350 50  0001 C CNN
-	1    4900 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1750 1350 4600 1350
+	1750 1350 3600 1350
 $Comp
 L lan9254_project:GND #PWR?
 U 1 1 61157A18
@@ -667,17 +623,106 @@ $EndComp
 Wire Wire Line
 	1750 3550 4600 3550
 Wire Wire Line
-	5600 1100 5600 1700
-Wire Wire Line
-	5450 1350 5500 1350
-Wire Wire Line
-	5500 1350 5500 1700
-Wire Wire Line
-	5150 1350 5250 1350
-Wire Wire Line
 	5600 3300 5600 3900
 Wire Wire Line
 	5450 3550 5500 3550
 Wire Wire Line
 	5250 3550 5150 3550
+$Comp
+L fmc:74AHC1G86 U2201
+U 1 1 61F876C4
+P 4900 1300
+F 0 "U2201" H 4800 1800 50  0000 L CNN
+F 1 "74AHC1T86" H 4800 1900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4900 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 1300 50  0001 C CNN
+	1    4900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L lan9254_project:+3V3 #PWR?
+U 1 1 60E04837
+P 4900 1100
+F 0 "#PWR?" H 4900 950 50  0001 C CNN
+F 1 "+3V3" H 4915 1273 50  0000 C CNN
+F 2 "" H 4900 1100 50  0001 C CNN
+F 3 "" H 4900 1100 50  0001 C CNN
+	1    4900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2209
+U 1 1 60E01790
+P 5350 1300
+F 0 "R2209" H 5000 1350 50  0000 L CNN
+F 1 "100" H 5100 1250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 1300 50  0001 C CNN
+F 3 "~" H 5350 1300 50  0001 C CNN
+	1    5350 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 1300 5250 1300
+Wire Wire Line
+	4900 1500 4900 1550
+Wire Wire Line
+	5450 1300 5600 1300
+Wire Wire Line
+	5600 1300 5600 1700
+Wire Wire Line
+	5500 1700 5500 1500
+Wire Wire Line
+	5500 1500 4900 1500
+Connection ~ 4900 1500
+Text Notes 4750 600  0    50   ~ 0
+Level-translating gate!
+$Comp
+L Jumper:Jumper_3_Bridged12 JP2201
+U 1 1 61FA3E41
+P 4300 1100
+F 0 "JP2201" H 4300 1304 50  0000 C CNN
+F 1 "100FDb" H 4300 1213 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4300 1100 50  0001 C CNN
+F 3 "~" H 4300 1100 50  0001 C CNN
+	1    4300 1100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1250 4600 1250
+$Comp
+L Device:R_Small R2211
+U 1 1 61FAC493
+P 3800 1250
+F 0 "R2211" H 3500 1300 50  0000 L CNN
+F 1 "100" H 3550 1200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3800 1250 50  0001 C CNN
+F 3 "~" H 3800 1250 50  0001 C CNN
+	1    3800 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L lan9254_project:+1V8 #PWR?
+U 1 1 61FACEB2
+P 4550 1100
+F 0 "#PWR?" H 4550 950 50  0001 C CNN
+F 1 "+1V8" H 4565 1273 50  0000 C CNN
+F 2 "" H 4550 1100 50  0001 C CNN
+F 3 "" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1250 4300 1250
+Connection ~ 4300 1250
+Wire Wire Line
+	3700 1250 3600 1250
+Wire Wire Line
+	3600 1250 3600 1350
+Connection ~ 3600 1350
+Wire Wire Line
+	3600 1350 4600 1350
+Wire Wire Line
+	4050 1100 4050 1500
+Wire Wire Line
+	4050 1500 4900 1500
 $EndSCHEMATC

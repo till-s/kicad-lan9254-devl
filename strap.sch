@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 12
+Sheet 6 18
 Title ""
 Date ""
 Rev ""
@@ -210,72 +210,38 @@ ERRLED#100FD_B#LEDPOL4
 $Comp
 L Device:R_Small R?
 U 1 1 60E86BE2
-P 5050 3000
+P 4350 3000
 AR Path="/60DC28BD/60E86BE2" Ref="R?"  Part="1" 
 AR Path="/60E5E32B/60E86BE2" Ref="R22"  Part="1" 
 AR Path="/60DB2574/60E5E32B/60E86BE2" Ref="R2108"  Part="1" 
 AR Path="/60E70F2C/60E5E32B/60E86BE2" Ref="R2108"  Part="1" 
-F 0 "R2108" V 5100 2850 50  0000 C CNN
-F 1 "1k" V 5100 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5050 3000 50  0001 C CNN
-F 3 "~" H 5050 3000 50  0001 C CNN
-	1    5050 3000
+F 0 "R2108" V 4400 2850 50  0000 C CNN
+F 1 "1k" V 4400 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 3000 50  0001 C CNN
+F 3 "~" H 4350 3000 50  0001 C CNN
+	1    4350 3000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3800 3100 4500 3100
-Wire Wire Line
-	4950 3400 4400 3400
+	3800 3100 5400 3100
 Connection ~ 4500 2900
 $Comp
 L Device:R_Small R?
 U 1 1 60E8A4A5
-P 4600 3100
+P 5500 3100
 AR Path="/60DC28BD/60E8A4A5" Ref="R?"  Part="1" 
 AR Path="/60E5E32B/60E8A4A5" Ref="R20"  Part="1" 
 AR Path="/60DB2574/60E5E32B/60E8A4A5" Ref="R2106"  Part="1" 
 AR Path="/60E70F2C/60E5E32B/60E8A4A5" Ref="R2106"  Part="1" 
-F 0 "R2106" V 4650 2950 50  0000 C CNN
-F 1 "1k" V 4650 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 3100 50  0001 C CNN
-F 3 "~" H 4600 3100 50  0001 C CNN
-	1    4600 3100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 60E8A76F
-P 5050 3400
-AR Path="/60DC28BD/60E8A76F" Ref="R?"  Part="1" 
-AR Path="/60E5E32B/60E8A76F" Ref="R23"  Part="1" 
-AR Path="/60DB2574/60E5E32B/60E8A76F" Ref="R2109"  Part="1" 
-AR Path="/60E70F2C/60E5E32B/60E8A76F" Ref="R2109"  Part="1" 
-F 0 "R2109" V 5100 3250 50  0000 C CNN
-F 1 "5k1" V 5100 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5050 3400 50  0001 C CNN
-F 3 "~" H 5050 3400 50  0001 C CNN
-	1    5050 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 60E8AAF4
-P 5000 2200
-AR Path="/60DC28BD/60E8AAF4" Ref="R?"  Part="1" 
-AR Path="/60E5E32B/60E8AAF4" Ref="R21"  Part="1" 
-AR Path="/60DB2574/60E5E32B/60E8AAF4" Ref="R2107"  Part="1" 
-AR Path="/60E70F2C/60E5E32B/60E8AAF4" Ref="R2107"  Part="1" 
-F 0 "R2107" V 5050 2050 50  0000 C CNN
-F 1 "1k" V 5050 2350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 2200 50  0001 C CNN
-F 3 "~" H 5000 2200 50  0001 C CNN
-	1    5000 2200
+F 0 "R2106" V 5550 2950 50  0000 C CNN
+F 1 "1k" V 5550 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 3100 50  0001 C CNN
+F 3 "~" H 5500 3100 50  0001 C CNN
+	1    5500 3100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	3800 2200 4900 2200
-Wire Wire Line
-	5100 2200 6450 2200
 $Comp
 L Interface:PCA9306 U2103
 U 1 1 60E8C646
@@ -365,24 +331,7 @@ SCL_3V3
 Text HLabel 10300 2900 2    50   BiDi ~ 0
 SDA_3V3
 Wire Wire Line
-	5150 3000 6350 3000
-$Comp
-L lan9254_project:+3V3 #PWR?
-U 1 1 60E97551
-P 4900 4150
-AR Path="/60DC28BD/60E97551" Ref="#PWR?"  Part="1" 
-AR Path="/60E5E32B/60E97551" Ref="#PWR?"  Part="1" 
-AR Path="/60DB2574/60E5E32B/60E97551" Ref="#PWR?"  Part="1" 
-AR Path="/60E70F2C/60E5E32B/60E97551" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4900 4000 50  0001 C CNN
-F 1 "+3V3" H 4915 4323 50  0000 C CNN
-F 2 "" H 4900 4150 50  0001 C CNN
-F 3 "" H 4900 4150 50  0001 C CNN
-	1    4900 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 4150 4900 4600
+	4450 3000 4500 3000
 $Comp
 L lan9254_project:GND #PWR?
 U 1 1 60E99625
@@ -399,12 +348,9 @@ F 3 "" H 4900 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 3400 4400 5100
+	4100 3400 4100 5150
 Wire Wire Line
-	4400 5100 4600 5100
-Connection ~ 4400 3400
-Wire Wire Line
-	4400 3400 3800 3400
+	4100 5150 4600 5150
 $Comp
 L Device:R_Small R?
 U 1 1 60E9E985
@@ -433,7 +379,7 @@ F 3 "~" V 5700 5100 50  0001 C CNN
 F 4 "Wurth" H 5700 5100 50  0001 C CNN "Manufacturer"
 F 5 "150060RS75000" H 5700 5100 50  0001 C CNN "Part"
 	1    5700 5100
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L lan9254_project:GND #PWR?
@@ -478,25 +424,10 @@ F 3 "~" V 5700 6300 50  0001 C CNN
 F 4 "Wurth" H 5700 6300 50  0001 C CNN "Manufacturer"
 F 5 "150060GS75000" H 5700 6300 50  0001 C CNN "Part"
 	1    5700 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L lan9254_project:+1V8 #PWR?
-U 1 1 60EA9207
-P 4900 6050
-AR Path="/60DC28BD/60EA9207" Ref="#PWR?"  Part="1" 
-AR Path="/60E5E32B/60EA9207" Ref="#PWR?"  Part="1" 
-AR Path="/60DB2574/60E5E32B/60EA9207" Ref="#PWR?"  Part="1" 
-AR Path="/60E70F2C/60E5E32B/60EA9207" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4900 5900 50  0001 C CNN
-F 1 "+1V8" H 4915 6223 50  0000 C CNN
-F 2 "" H 4900 6050 50  0001 C CNN
-F 3 "" H 4900 6050 50  0001 C CNN
-	1    4900 6050
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 6300 4600 6300
+	4200 6350 4600 6350
 $Comp
 L Device:R_Small R?
 U 1 1 60EACF8C
@@ -578,34 +509,8 @@ Wire Wire Line
 	3800 7100 4050 7100
 Text HLabel 9600 2200 2    50   Input ~ 0
 I2C_VCC
-$Comp
-L fmc:74LVC1G06 U2101
-U 1 1 611336A3
-P 4900 5100
-F 0 "U2101" H 4550 5300 50  0000 L CNN
-F 1 "74LVC1G06" H 4400 4900 50  0000 L CNN
-F 2 "proj_footprints:SOT-5x3" H 4900 5100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 5100 50  0001 C CNN
-	1    4900 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4900 5300 4900 5500
-Wire Wire Line
-	4900 4900 4900 4600
-$Comp
-L fmc:74LVC1G06 U2102
-U 1 1 611387E0
-P 4900 6300
-F 0 "U2102" H 4550 6500 50  0000 L CNN
-F 1 "74LVC1G06" H 4400 6100 50  0000 L CNN
-F 2 "proj_footprints:SOT-5x3" H 4900 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 6300 50  0001 C CNN
-	1    4900 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 6050 4900 6100
+	4900 5300 4900 5400
 $Comp
 L fmc:24AA0x U2104
 U 1 1 611D5C36
@@ -667,10 +572,6 @@ F 3 "~" H 6350 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5950 4600 4900 4600
-Connection ~ 5950 5100
-Connection ~ 4900 4600
-Wire Wire Line
 	6150 2800 6900 2800
 Connection ~ 6150 2800
 Wire Wire Line
@@ -683,19 +584,7 @@ Connection ~ 6250 2900
 Wire Wire Line
 	6250 3750 6250 2900
 Wire Wire Line
-	6350 3000 6350 3750
-Wire Wire Line
-	6450 2200 6450 3750
-Wire Wire Line
-	5150 3400 6550 3400
-Wire Wire Line
-	6550 3400 6550 3750
-Wire Wire Line
-	6550 4350 6550 5100
-Wire Wire Line
-	6550 5100 5950 5100
-Wire Wire Line
-	4700 3100 5950 3100
+	5600 3100 5950 3100
 Wire Wire Line
 	5950 3100 5950 3750
 Wire Wire Line
@@ -719,9 +608,7 @@ F 3 "~" H 4200 7100 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	5950 5100 5950 6300
-Wire Wire Line
-	5950 4600 5950 5100
+	5950 5100 5950 5400
 Wire Wire Line
 	4200 7350 4200 7450
 $Comp
@@ -763,10 +650,10 @@ Connection ~ 4200 2800
 Wire Wire Line
 	4200 2800 6150 2800
 Wire Wire Line
-	4200 3000 4200 6300
+	4200 3000 4200 6350
 Connection ~ 4200 3000
 Wire Wire Line
-	4200 3000 4950 3000
+	4200 3000 4250 3000
 Wire Wire Line
 	7700 2700 7750 2700
 Wire Wire Line
@@ -936,4 +823,259 @@ Wire Wire Line
 	5950 6300 5850 6300
 Wire Wire Line
 	5550 6300 5450 6300
+NoConn ~ 4900 2200
+Text Notes 4950 2300 0    50   ~ 0
+For routing reasons this is now\na dedicated jumper elsewhere!
+Wire Wire Line
+	4100 3400 3800 3400
+Wire Wire Line
+	4250 3400 4100 3400
+Connection ~ 4100 3400
+$Comp
+L fmc:74AHC1G86 U2101
+U 1 1 61FE3BB7
+P 4900 5100
+F 0 "U2101" H 4600 5350 50  0000 L CNN
+F 1 "74AHC1T86" H 5000 4950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4900 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 5100 50  0001 C CNN
+	1    4900 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5400 5950 5400
+Connection ~ 4900 5400
+Wire Wire Line
+	4900 5400 4900 5500
+Connection ~ 5950 5400
+Wire Wire Line
+	5950 5400 5950 6300
+$Comp
+L fmc:74AHC1G86 U2102
+U 1 1 61FF23D2
+P 4900 6300
+F 0 "U2102" H 4600 6550 50  0000 L CNN
+F 1 "74AHC1T86" H 5000 6150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4900 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 6300 50  0001 C CNN
+	1    4900 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L lan9254_project:+3V3 #PWR?
+U 1 1 60E97551
+P 4900 4800
+AR Path="/60DC28BD/60E97551" Ref="#PWR?"  Part="1" 
+AR Path="/60E5E32B/60E97551" Ref="#PWR?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/60E97551" Ref="#PWR?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/60E97551" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 4650 50  0001 C CNN
+F 1 "+3V3" H 4915 4973 50  0000 C CNN
+F 2 "" H 4900 4800 50  0001 C CNN
+F 3 "" H 4900 4800 50  0001 C CNN
+	1    4900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L lan9254_project:+3V3 #PWR?
+U 1 1 61FF9FC1
+P 4900 6000
+AR Path="/60DC28BD/61FF9FC1" Ref="#PWR?"  Part="1" 
+AR Path="/60E5E32B/61FF9FC1" Ref="#PWR?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/61FF9FC1" Ref="#PWR?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/61FF9FC1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 5850 50  0001 C CNN
+F 1 "+3V3" H 4915 6173 50  0000 C CNN
+F 2 "" H 4900 6000 50  0001 C CNN
+F 3 "" H 4900 6000 50  0001 C CNN
+	1    4900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6000 4900 6100
+Text Notes 6100 5800 0    50   ~ 0
+T-version: Level-translating gate!
+$Comp
+L Device:R_Small R?
+U 1 1 60E8A76F
+P 4350 3400
+AR Path="/60DC28BD/60E8A76F" Ref="R?"  Part="1" 
+AR Path="/60E5E32B/60E8A76F" Ref="R23"  Part="1" 
+AR Path="/60DB2574/60E5E32B/60E8A76F" Ref="R2109"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/60E8A76F" Ref="R2109"  Part="1" 
+F 0 "R2109" V 4400 3250 50  0000 C CNN
+F 1 "5k1" V 4400 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 3400 50  0001 C CNN
+F 3 "~" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 5050 4600 4300
+Wire Wire Line
+	4450 3400 4600 3400
+Wire Wire Line
+	4500 3000 4500 3600
+Wire Wire Line
+	4500 6250 4600 6250
+Wire Wire Line
+	4900 4800 4900 4900
+$Comp
+L fmc:74AHC1G86 U2106
+U 1 1 62005576
+P 4900 4300
+F 0 "U2106" H 4350 4300 50  0000 L CNN
+F 1 "74AHC1T86" H 4100 4400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4900 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4600 4300
+Wire Wire Line
+	4600 4300 4600 3400
+$Comp
+L lan9254_project:+3V3 #PWR?
+U 1 1 6200AD8F
+P 4900 4100
+AR Path="/60DC28BD/6200AD8F" Ref="#PWR?"  Part="1" 
+AR Path="/60E5E32B/6200AD8F" Ref="#PWR?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/6200AD8F" Ref="#PWR?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/6200AD8F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 3950 50  0001 C CNN
+F 1 "+3V3" H 4915 4273 50  0000 C CNN
+F 2 "" H 4900 4100 50  0001 C CNN
+F 3 "" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L fmc:74AHC1G86 U2105
+U 1 1 62010771
+P 4900 3600
+F 0 "U2105" H 4350 3600 50  0000 L CNN
+F 1 "74AHC1T86" H 4100 3700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 4900 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4900 3600 50  0001 C CNN
+	1    4900 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4300 4650 4300
+Wire Wire Line
+	4650 3600 4500 3600
+Connection ~ 4500 3600
+Wire Wire Line
+	4500 3600 4500 6250
+Wire Wire Line
+	5200 3550 5750 3550
+Wire Wire Line
+	6350 3550 6350 3750
+$Comp
+L Device:R_Small R?
+U 1 1 6201D964
+P 5600 3400
+AR Path="/60DC28BD/6201D964" Ref="R?"  Part="1" 
+AR Path="/60E5E32B/6201D964" Ref="R?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/6201D964" Ref="R?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/6201D964" Ref="R2114"  Part="1" 
+F 0 "R2114" V 5700 3450 50  0000 C CNN
+F 1 "100k" V 5650 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 3400 50  0001 C CNN
+F 3 "~" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 3400 5750 3400
+Wire Wire Line
+	5750 3400 5750 3550
+Connection ~ 5750 3550
+Wire Wire Line
+	5750 3550 6350 3550
+Wire Wire Line
+	5500 3400 4900 3400
+Wire Wire Line
+	5200 3650 5250 3650
+Wire Wire Line
+	5250 3650 5250 3800
+Wire Wire Line
+	5250 4350 5200 4350
+Wire Wire Line
+	4900 3800 5250 3800
+Connection ~ 5250 3800
+Wire Wire Line
+	5250 3800 5250 4350
+Wire Wire Line
+	4900 4500 5250 4500
+Wire Wire Line
+	5250 4500 5250 4350
+Connection ~ 5250 4350
+$Comp
+L lan9254_project:GND #PWR?
+U 1 1 62032638
+P 5250 4550
+AR Path="/60DC28BD/62032638" Ref="#PWR?"  Part="1" 
+AR Path="/60E5E32B/62032638" Ref="#PWR?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/62032638" Ref="#PWR?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/62032638" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5250 4300 50  0001 C CNN
+F 1 "GND" H 5255 4377 50  0000 C CNN
+F 2 "" H 5250 4550 50  0001 C CNN
+F 3 "" H 5250 4550 50  0001 C CNN
+	1    5250 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4550 5250 4500
+Connection ~ 5250 4500
+$Comp
+L Device:R_Small R?
+U 1 1 62036DAB
+P 5550 4100
+AR Path="/60DC28BD/62036DAB" Ref="R?"  Part="1" 
+AR Path="/60E5E32B/62036DAB" Ref="R?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/62036DAB" Ref="R?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/62036DAB" Ref="R2107"  Part="1" 
+F 0 "R2107" V 5650 4150 50  0000 C CNN
+F 1 "100k" V 5600 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 4100 50  0001 C CNN
+F 3 "~" H 5550 4100 50  0001 C CNN
+	1    5550 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 4100 4900 4100
+Connection ~ 4900 4100
+Wire Wire Line
+	5200 4250 5750 4250
+Wire Wire Line
+	5750 4250 5750 4100
+Wire Wire Line
+	5650 4100 5750 4100
+Connection ~ 5750 4100
+Wire Wire Line
+	5750 4100 5750 3650
+Wire Wire Line
+	5750 3650 6450 3650
+Wire Wire Line
+	6450 3650 6450 3750
+NoConn ~ 6550 3750
+NoConn ~ 6550 4350
+$Comp
+L lan9254_project:+1V8 #PWR?
+U 1 1 620537D3
+P 4900 3400
+AR Path="/60DC28BD/620537D3" Ref="#PWR?"  Part="1" 
+AR Path="/60E5E32B/620537D3" Ref="#PWR?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/620537D3" Ref="#PWR?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/620537D3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 3250 50  0001 C CNN
+F 1 "+1V8" H 4915 3573 50  0000 C CNN
+F 2 "" H 4900 3400 50  0001 C CNN
+F 3 "" H 4900 3400 50  0001 C CNN
+	1    4900 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 3400
 $EndSCHEMATC

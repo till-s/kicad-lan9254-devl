@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 18
+Sheet 15 18
 Title ""
 Date ""
 Rev ""
@@ -23,7 +23,7 @@ Text HLabel 3800 2900 0    50   BiDi ~ 0
 EESDA#EE_EMUL1
 Text HLabel 3800 3000 0    50   BiDi ~ 0
 RUNLED#EE_EMUL0
-Text HLabel 3800 1300 0    50   BiDi ~ 0
+Text HLabel 3800 1500 0    50   BiDi ~ 0
 XTAL_MODE
 Text HLabel 3800 3650 0    50   BiDi ~ 0
 EE_EMUL_SPI3
@@ -34,7 +34,7 @@ EE_EMUL_SPI1
 Text HLabel 3800 3950 0    50   BiDi ~ 0
 EE_EMUL_SPI0
 NoConn ~ 3800 3750
-Text Notes 3100 1250 0    50   ~ 0
+Text Notes 3100 1450 0    50   ~ 0
 VDD3V3 (analog)\n
 $Comp
 L Device:R_Small R?
@@ -78,7 +78,7 @@ Text Notes 3850 2100 0    50   ~ 0
 (PU)
 Text Notes 3850 2200 0    50   ~ 0
 (PU)
-Text Notes 3850 1300 0    50   ~ 0
+Text Notes 3850 1500 0    50   ~ 0
 (mid)
 Text Notes 3850 3650 0    50   ~ 0
 (PD)\n
@@ -166,37 +166,37 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 60E7CBCF
-P 4150 1300
+P 4150 1500
 AR Path="/60DC28BD/60E7CBCF" Ref="R?"  Part="1" 
 AR Path="/60E5E32B/60E7CBCF" Ref="R14"  Part="1" 
 AR Path="/60DB2574/60E5E32B/60E7CBCF" Ref="R2101"  Part="1" 
 AR Path="/60E70F2C/60E5E32B/60E7CBCF" Ref="R2101"  Part="1" 
-F 0 "R2101" V 4250 1050 50  0000 C CNN
-F 1 "1k" V 4255 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4150 1300 50  0001 C CNN
-F 3 "~" H 4150 1300 50  0001 C CNN
-	1    4150 1300
+F 0 "R2101" V 4250 1250 50  0000 C CNN
+F 1 "1k" V 4255 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4150 1500 50  0001 C CNN
+F 3 "~" H 4150 1500 50  0001 C CNN
+	1    4150 1500
 	0    -1   -1   0   
 $EndComp
 $Comp
 L lan9254_project:GND #PWR?
 U 1 1 60E7CC6D
-P 4400 1300
+P 4400 1500
 AR Path="/60DC28BD/60E7CC6D" Ref="#PWR?"  Part="1" 
 AR Path="/60E5E32B/60E7CC6D" Ref="#PWR?"  Part="1" 
 AR Path="/60DB2574/60E5E32B/60E7CC6D" Ref="#PWR?"  Part="1" 
 AR Path="/60E70F2C/60E5E32B/60E7CC6D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4400 1050 50  0001 C CNN
-F 1 "GND" V 4405 1172 50  0000 R CNN
-F 2 "" H 4400 1300 50  0001 C CNN
-F 3 "" H 4400 1300 50  0001 C CNN
-	1    4400 1300
+F 0 "#PWR?" H 4400 1250 50  0001 C CNN
+F 1 "GND" V 4405 1372 50  0000 R CNN
+F 2 "" H 4400 1500 50  0001 C CNN
+F 3 "" H 4400 1500 50  0001 C CNN
+	1    4400 1500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4250 1300 4400 1300
+	4250 1500 4400 1500
 Wire Wire Line
-	4050 1300 3900 1300
+	4050 1500 3900 1500
 Text Notes 3850 3100 0    50   ~ 0
 (PU)
 Text HLabel 3800 3100 0    50   BiDi ~ 0
@@ -327,9 +327,9 @@ Connection ~ 6300 4400
 Wire Wire Line
 	6300 4400 6350 4400
 Text HLabel 10300 2800 2    50   BiDi ~ 0
-SCL_3V3
+SCL
 Text HLabel 10300 2900 2    50   BiDi ~ 0
-SDA_3V3
+SDA
 Wire Wire Line
 	4450 3000 4500 3000
 $Comp
@@ -469,45 +469,45 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 60DB9030
-P 4150 1550
+P 4150 1750
 AR Path="/60DC28BD/60DB9030" Ref="R?"  Part="1" 
 AR Path="/60E5E32B/60DB9030" Ref="R15"  Part="1" 
 AR Path="/60DB2574/60E5E32B/60DB9030" Ref="R2102"  Part="1" 
 AR Path="/60E70F2C/60E5E32B/60DB9030" Ref="R2102"  Part="1" 
-F 0 "R2102" V 4250 1300 50  0000 C CNN
-F 1 "1k" V 4255 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4150 1550 50  0001 C CNN
-F 3 "~" H 4150 1550 50  0001 C CNN
-	1    4150 1550
+F 0 "R2102" V 4250 1500 50  0000 C CNN
+F 1 "1k" V 4255 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4150 1750 50  0001 C CNN
+F 3 "~" H 4150 1750 50  0001 C CNN
+	1    4150 1750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L lan9254_project:+3V3 #PWR?
 U 1 1 60DB9387
-P 4400 1550
+P 4400 1750
 AR Path="/60DC28BD/60DB9387" Ref="#PWR?"  Part="1" 
 AR Path="/60E5E32B/60DB9387" Ref="#PWR?"  Part="1" 
 AR Path="/60DB2574/60E5E32B/60DB9387" Ref="#PWR?"  Part="1" 
 AR Path="/60E70F2C/60E5E32B/60DB9387" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4400 1400 50  0001 C CNN
-F 1 "+3V3" H 4415 1723 50  0000 C CNN
-F 2 "" H 4400 1550 50  0001 C CNN
-F 3 "" H 4400 1550 50  0001 C CNN
-	1    4400 1550
+F 0 "#PWR?" H 4400 1600 50  0001 C CNN
+F 1 "+3V3" H 4415 1923 50  0000 C CNN
+F 2 "" H 4400 1750 50  0001 C CNN
+F 3 "" H 4400 1750 50  0001 C CNN
+	1    4400 1750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4400 1550 4250 1550
+	4400 1750 4250 1750
 Wire Wire Line
-	4050 1550 3900 1550
+	4050 1750 3900 1750
 Wire Wire Line
-	3900 1550 3900 1300
-Connection ~ 3900 1300
+	3900 1750 3900 1500
+Connection ~ 3900 1500
 Wire Wire Line
-	3900 1300 3800 1300
+	3900 1500 3800 1500
 Wire Wire Line
 	3800 7100 4050 7100
-Text HLabel 9600 2200 2    50   Input ~ 0
+Text HLabel 10300 2200 2    50   Input ~ 0
 I2C_VCC
 Wire Wire Line
 	4900 5300 4900 5400
@@ -533,8 +533,6 @@ Wire Wire Line
 	9450 2900 10300 2900
 Wire Wire Line
 	9650 3150 9900 3150
-Wire Wire Line
-	9900 3150 9900 3550
 $Comp
 L lan9254_project:GND #PWR?
 U 1 1 611E4EF3
@@ -552,7 +550,6 @@ F 3 "" H 9900 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9850 3550 9900 3550
-Connection ~ 9900 3550
 Wire Wire Line
 	9900 3550 9900 4050
 Text Notes 7900 4750 0    50   ~ 0
@@ -594,8 +591,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 4400 6050 4400
 Connection ~ 6050 4400
-NoConn ~ 6650 4350
-NoConn ~ 6650 3750
 $Comp
 L Jumper:Jumper_3_Bridged12 JP2101
 U 1 1 60E8D294
@@ -682,7 +677,7 @@ Wire Wire Line
 	9000 2200 9250 2200
 Connection ~ 9250 2200
 Wire Wire Line
-	9250 2200 9600 2200
+	9250 2200 10300 2200
 Wire Wire Line
 	7700 2800 9550 2800
 Wire Wire Line
@@ -1060,8 +1055,6 @@ Wire Wire Line
 	5750 3650 6450 3650
 Wire Wire Line
 	6450 3650 6450 3750
-NoConn ~ 6550 3750
-NoConn ~ 6550 4350
 $Comp
 L lan9254_project:+1V8 #PWR?
 U 1 1 620537D3
@@ -1078,4 +1071,64 @@ F 3 "" H 4900 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4900 3400
+Text HLabel 3800 700  0    50   Output ~ 0
+I2C_ISOLb
+Text HLabel 3800 850  0    50   Output ~ 0
+JP8
+Text HLabel 3800 1000 0    50   Output ~ 0
+JP7
+Wire Wire Line
+	6550 3750 6550 1000
+Wire Wire Line
+	6550 1000 3800 1000
+Wire Wire Line
+	6650 3750 6650 850 
+Wire Wire Line
+	6650 850  3800 850 
+Wire Wire Line
+	8650 2200 8650 700 
+Wire Wire Line
+	8650 700  3800 700 
+Wire Wire Line
+	6650 4350 6650 4400
+Wire Wire Line
+	6650 4400 6550 4400
+Connection ~ 6450 4400
+Wire Wire Line
+	6550 4350 6550 4400
+Connection ~ 6550 4400
+Wire Wire Line
+	6550 4400 6450 4400
+Text HLabel 10300 3150 2    50   Input ~ 0
+EEP_WP
+$Comp
+L Device:R_Small R?
+U 1 1 6202FC5D
+P 9900 3350
+AR Path="/60DC28BD/6202FC5D" Ref="R?"  Part="1" 
+AR Path="/60E5E32B/6202FC5D" Ref="R?"  Part="1" 
+AR Path="/60DB2574/60E5E32B/6202FC5D" Ref="R?"  Part="1" 
+AR Path="/60E70F2C/60E5E32B/6202FC5D" Ref="R2115"  Part="1" 
+F 0 "R2115" H 9959 3396 50  0000 L CNN
+F 1 "10k" H 9959 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9900 3350 50  0001 C CNN
+F 3 "~" H 9900 3350 50  0001 C CNN
+	1    9900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3250 9900 3150
+Connection ~ 9900 3150
+Wire Wire Line
+	9900 3150 10300 3150
+Wire Wire Line
+	9900 3450 9900 3550
+Connection ~ 9900 3550
+Wire Wire Line
+	6350 3550 6350 1150
+Connection ~ 6350 3550
+Wire Wire Line
+	3800 1150 6350 1150
+Text HLabel 3800 1150 0    50   Output ~ 0
+EEP_SZ
 $EndSCHEMATC

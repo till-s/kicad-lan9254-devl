@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 18
+Sheet 12 20
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L fmc:lan9254 U2301
-U 1 1 60DBFED4
-P 5050 4500
-F 0 "U2301" H 5050 4950 50  0000 C CNN
-F 1 "lan9254" H 5050 4800 50  0000 C CNN
-F 2 "proj_footprints:TQFP-80_12x12mm_P0.5mm_EP6x6mm" H 4650 3650 50  0001 C CNN
-F 3 "" H 4650 3650 50  0001 C CNN
-	1    5050 4500
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 1700 1050 1100 1600
 U 60DC28BD
@@ -1360,10 +1349,6 @@ Wire Wire Line
 Text Label 8500 2450 0    50   ~ 0
 TESTMODE
 Wire Wire Line
-	8900 1200 8500 1200
-Text Label 8500 1200 0    50   ~ 0
-EESCL
-Wire Wire Line
 	8900 1300 8500 1300
 Text Label 8500 1300 0    50   ~ 0
 EESDA
@@ -1412,7 +1397,7 @@ U 1 1 60DEEF2A
 P 2150 3550
 F 0 "X2301" H 2594 3596 50  0000 L CNN
 F 1 "FNETHE025" H 2594 3505 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_Diodes_FN-4Pin_7.0x5.0mm" H 2600 3200 50  0001 C CNN
+F 2 "proj_footprints:FNETH_and_ASE-4Pin_3.2x2.5mm" H 2600 3200 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/FNETHE025.pdf" H 1975 3675 50  0001 C CNN
 F 4 "FNETHE025" H 2150 3550 50  0001 C CNN "Part"
 F 5 "Diodes Inc." H 2150 3550 50  0001 C CNN "Manufacturer"
@@ -1440,37 +1425,37 @@ Wire Wire Line
 	1600 3850 1800 3850
 Connection ~ 1800 3850
 $Sheet
-S 7500 1250 550  300 
+S 1400 7200 550  300 
 U 60EF9F81
 F0 "IO_driver_1" 50
 F1 "IO_driver.sch" 50
-F2 "DATA" B L 7500 1400 50 
-F3 "DIR" I L 7500 1300 50 
+F2 "DATA" B L 1400 7350 50 
+F3 "DIR" I L 1400 7250 50 
 $EndSheet
 $Sheet
-S 7500 1950 550  300 
+S 3000 7250 550  300 
 U 60E556C7
 F0 "IO_driver_2" 50
 F1 "IO_driver.sch" 50
-F2 "DATA" B L 7500 2100 50 
-F3 "DIR" I L 7500 2000 50 
+F2 "DATA" B L 3000 7400 50 
+F3 "DIR" I L 3000 7300 50 
 $EndSheet
-Text HLabel 7400 2000 0    50   Input ~ 0
+Text HLabel 2900 7300 0    50   Input ~ 0
 FPGA_IO2_DIR
-Text HLabel 7400 2100 0    50   BiDi ~ 0
+Text HLabel 2900 7400 0    50   BiDi ~ 0
 FPGA_IO2_DAT
-Text HLabel 7400 1400 0    50   BiDi ~ 0
+Text HLabel 1300 7350 0    50   BiDi ~ 0
 FPGA_IO1_DAT
-Text HLabel 7400 1300 0    50   Input ~ 0
+Text HLabel 1300 7250 0    50   Input ~ 0
 FPGA_IO1_DIR
 Wire Wire Line
-	7400 1400 7500 1400
+	1300 7350 1400 7350
 Wire Wire Line
-	7400 1300 7500 1300
+	1300 7250 1400 7250
 Wire Wire Line
-	7400 2000 7500 2000
+	2900 7300 3000 7300
 Wire Wire Line
-	7400 2100 7500 2100
+	2900 7400 3000 7400
 $Comp
 L Connector:TestPoint TP2301
 U 1 1 60E57CD1
@@ -1550,17 +1535,6 @@ Wire Wire Line
 	6950 3550 8050 3550
 NoConn ~ 8500 1050
 $Comp
-L Logic_LevelTranslator:SN74LV1T34DBV U2302
-U 1 1 61FE5B40
-P 1800 6500
-F 0 "U2302" H 2050 6900 50  0000 R CNN
-F 1 "SN74LV1T34DBV" H 2050 7000 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2450 6250 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74lv1t34.pdf" H 1400 6300 50  0001 C CNN
-	1    1800 6500
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C2323
 U 1 1 61FE65E4
 P 1800 5900
@@ -1576,22 +1550,20 @@ XTAL_MODE
 $Comp
 L lan9254_project:GND #PWR?
 U 1 1 61FF1A93
-P 1800 6800
+P 1850 6750
 AR Path="/60DC28BD/61FF1A93" Ref="#PWR?"  Part="1" 
 AR Path="/61FF1A93" Ref="#PWR?"  Part="1" 
 AR Path="/60DB2574/61FF1A93" Ref="#PWR?"  Part="1" 
 AR Path="/60E70F2C/61FF1A93" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1800 6550 50  0001 C CNN
-F 1 "GND" H 1805 6627 50  0001 C CNN
-F 2 "" H 1800 6800 50  0001 C CNN
-F 3 "" H 1800 6800 50  0001 C CNN
-	1    1800 6800
+F 0 "#PWR?" H 1850 6500 50  0001 C CNN
+F 1 "GND" H 1855 6577 50  0001 C CNN
+F 2 "" H 1850 6750 50  0001 C CNN
+F 3 "" H 1850 6750 50  0001 C CNN
+	1    1850 6750
 	1    0    0    -1  
 $EndComp
 Text HLabel 1200 6500 0    50   Output ~ 0
 CLK_25MHz
-Wire Wire Line
-	2300 6500 2100 6500
 $Comp
 L Device:R_Small R?
 U 1 1 62066CC1
@@ -1645,4 +1617,156 @@ Text HLabel 10750 2400 2    50   Output ~ 0
 EEP_SZ
 Wire Wire Line
 	10750 2400 10450 2400
+Wire Wire Line
+	1750 6200 1800 6200
+Wire Wire Line
+	1800 6200 1850 6200
+Wire Wire Line
+	1850 6200 1850 6350
+Connection ~ 1800 6200
+Wire Wire Line
+	1850 6650 1850 6750
+Wire Wire Line
+	2050 6500 2300 6500
+Wire Wire Line
+	1750 6350 1750 6200
+$Comp
+L fmc:74LVC1G126 U18
+U 1 1 62937E9C
+P 1750 6500
+F 0 "U18" H 1500 6400 50  0000 R CNN
+F 1 "74LVC1T126" H 1550 6300 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1750 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1750 6500 50  0001 C CNN
+	1    1750 6500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L fmc:lan9254 U2301
+U 1 1 60DBFED4
+P 5050 4500
+F 0 "U2301" H 5050 4950 50  0000 C CNN
+F 1 "lan9254" H 5050 4800 50  0000 C CNN
+F 2 "proj_footprints:TQFP-80_12x12mm_P0.5mm_EP6x6mm" H 4650 3650 50  0001 C CNN
+F 3 "" H 4650 3650 50  0001 C CNN
+	1    5050 4500
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6950 800  650  600 
+U 626A75AE
+F0 "lan9254_jtag" 50
+F1 "lan9254_jtag.sch" 50
+F2 "TDO_i" I L 6950 900 50 
+F3 "TMS_i" I L 6950 1000 50 
+F4 "TCK_i" I L 6950 1100 50 
+F5 "TDI_i" I L 6950 1200 50 
+F6 "TDI_o" O R 7600 1200 50 
+F7 "TCK_o" O R 7600 1100 50 
+F8 "TDO_o" O R 7600 900 50 
+F9 "TMS_o" O R 7600 1000 50 
+F10 "OE_i" I L 6950 1300 50 
+$EndSheet
+Text Label 8500 1200 0    50   ~ 0
+EESCL
+Wire Wire Line
+	8900 1200 8500 1200
+Text Label 8000 1100 2    50   ~ 0
+EESCL
+Wire Wire Line
+	7600 1100 8000 1100
+Wire Wire Line
+	7600 1000 8000 1000
+Text Label 8000 1000 2    50   ~ 0
+EESDA
+Text Label 6550 900  0    50   ~ 0
+LINKACT0
+Wire Wire Line
+	6950 900  6550 900 
+Text Label 8000 1200 2    50   ~ 0
+LINKACT1
+Wire Wire Line
+	8000 1200 7600 1200
+Text HLabel 8000 900  2    50   Output ~ 0
+TDO
+Text HLabel 6550 1200 0    50   Input ~ 0
+TDI
+Text HLabel 6550 1100 0    50   Input ~ 0
+TCK
+Text HLabel 6550 1000 0    50   Input ~ 0
+TMS
+Wire Wire Line
+	7600 900  8000 900 
+Wire Wire Line
+	6550 1000 6950 1000
+Wire Wire Line
+	6550 1100 6950 1100
+Wire Wire Line
+	6550 1200 6950 1200
+Text HLabel 8000 1750 2    50   Output ~ 0
+JTAG_EN
+Text Label 6100 1750 0    50   ~ 0
+TESTMODE
+$Comp
+L Device:R_Small R?
+U 1 1 62801547
+P 6850 1950
+AR Path="/60DC28BD/62801547" Ref="R?"  Part="1" 
+AR Path="/62801547" Ref="R?"  Part="1" 
+AR Path="/60DB2574/62801547" Ref="R?"  Part="1" 
+AR Path="/60E70F2C/62801547" Ref="R2306"  Part="1" 
+F 0 "R2306" H 6909 1996 50  0000 L CNN
+F 1 "10k" H 6909 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6850 1950 50  0001 C CNN
+F 3 "~" H 6850 1950 50  0001 C CNN
+	1    6850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6280206E
+P 6650 1750
+AR Path="/60DC28BD/6280206E" Ref="R?"  Part="1" 
+AR Path="/6280206E" Ref="R?"  Part="1" 
+AR Path="/60DB2574/6280206E" Ref="R?"  Part="1" 
+AR Path="/60E70F2C/6280206E" Ref="R2305"  Part="1" 
+F 0 "R2305" H 6709 1796 50  0000 L CNN
+F 1 "0" H 6709 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 1750 50  0001 C CNN
+F 3 "~" H 6650 1750 50  0001 C CNN
+	1    6650 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 1750 6850 1750
+Wire Wire Line
+	6850 1850 6850 1750
+Connection ~ 6850 1750
+Wire Wire Line
+	6850 1750 8000 1750
+Wire Wire Line
+	6100 1750 6550 1750
+$Comp
+L lan9254_project:GND #PWR?
+U 1 1 6282B326
+P 6850 2100
+AR Path="/60DC28BD/6282B326" Ref="#PWR?"  Part="1" 
+AR Path="/6282B326" Ref="#PWR?"  Part="1" 
+AR Path="/60DB2574/6282B326" Ref="#PWR?"  Part="1" 
+AR Path="/60E70F2C/6282B326" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6850 1850 50  0001 C CNN
+F 1 "GND" H 7000 2000 50  0000 C CNN
+F 2 "" H 6850 2100 50  0001 C CNN
+F 3 "" H 6850 2100 50  0001 C CNN
+	1    6850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2100 6850 2050
+Text Notes 7200 2200 0    50   ~ 0
+\n(In case buffer is not loaded\nomitting R2305 makes\nFPGA-JTAG independent of\nTESTMODE)
+Wire Wire Line
+	6850 1750 6850 1300
+Wire Wire Line
+	6850 1300 6950 1300
 $EndSCHEMATC

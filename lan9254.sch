@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 20
+Sheet 12 21
 Title ""
 Date ""
 Rev ""
@@ -1425,37 +1425,37 @@ Wire Wire Line
 	1600 3850 1800 3850
 Connection ~ 1800 3850
 $Sheet
-S 1400 7200 550  300 
+S 1250 7200 550  300 
 U 60EF9F81
 F0 "IO_driver_1" 50
 F1 "IO_driver.sch" 50
-F2 "DATA" B L 1400 7350 50 
-F3 "DIR" I L 1400 7250 50 
+F2 "DATA" B L 1250 7350 50 
+F3 "DIR" I L 1250 7250 50 
 $EndSheet
 $Sheet
-S 3000 7250 550  300 
+S 2550 7200 550  300 
 U 60E556C7
 F0 "IO_driver_2" 50
 F1 "IO_driver.sch" 50
-F2 "DATA" B L 3000 7400 50 
-F3 "DIR" I L 3000 7300 50 
+F2 "DATA" B L 2550 7350 50 
+F3 "DIR" I L 2550 7250 50 
 $EndSheet
-Text HLabel 2900 7300 0    50   Input ~ 0
+Text HLabel 2450 7250 0    50   Input ~ 0
 FPGA_IO2_DIR
-Text HLabel 2900 7400 0    50   BiDi ~ 0
+Text HLabel 2450 7350 0    50   BiDi ~ 0
 FPGA_IO2_DAT
-Text HLabel 1300 7350 0    50   BiDi ~ 0
+Text HLabel 1150 7350 0    50   BiDi ~ 0
 FPGA_IO1_DAT
-Text HLabel 1300 7250 0    50   Input ~ 0
+Text HLabel 1150 7250 0    50   Input ~ 0
 FPGA_IO1_DIR
 Wire Wire Line
-	1300 7350 1400 7350
+	1150 7350 1250 7350
 Wire Wire Line
-	1300 7250 1400 7250
+	1150 7250 1250 7250
 Wire Wire Line
-	2900 7300 3000 7300
+	2450 7250 2550 7250
 Wire Wire Line
-	2900 7400 3000 7400
+	2450 7350 2550 7350
 $Comp
 L Connector:TestPoint TP2301
 U 1 1 60E57CD1
@@ -1769,4 +1769,20 @@ Wire Wire Line
 	6850 1750 6850 1300
 Wire Wire Line
 	6850 1300 6950 1300
+$Sheet
+S 3850 7200 550  300 
+U 62739E15
+F0 "IO_driver_3" 50
+F1 "IO_driver.sch" 50
+F2 "DATA" B L 3850 7350 50 
+F3 "DIR" I L 3850 7250 50 
+$EndSheet
+Text HLabel 3750 7250 0    50   Input ~ 0
+FPGA_IO3_DIR
+Text HLabel 3750 7350 0    50   BiDi ~ 0
+FPGA_IO3_DAT
+Wire Wire Line
+	3750 7250 3850 7250
+Wire Wire Line
+	3750 7350 3850 7350
 $EndSCHEMATC

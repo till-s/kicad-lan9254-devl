@@ -1479,7 +1479,6 @@
     )
   )
 
-
   (junction (at 120.65 109.22) (diameter 0) (color 0 0 0 0)
     (uuid 06fb8a5e-69f3-44ca-bc88-4da9a1408625)
   )
@@ -2131,7 +2130,7 @@
     (pin "5" (uuid ba79d86b-6be5-407c-a515-d8d0367f9da7))
     (pin "6" (uuid 812c4604-1015-4b34-aa22-3298e21d1b39))
     (pin "7" (uuid 631755c4-1bc5-4b5e-bff1-03c4ad13206a))
-    (pin "SH" (uuid b99ec7a8-1021-4e15-9e91-0e4983722d70))
+    (pin "SH" (uuid b99ec7a8-1021-4e15-9e91-0e4983722d72))
     (pin "10" (uuid 09dd9bbb-bb72-424d-85a9-6c4b185ec0cb))
     (pin "11" (uuid 2686dae5-bb30-4448-a31f-1776a9864940))
     (pin "12" (uuid e08eeebc-fefb-4a16-9e97-4b2026cf7aa0))
@@ -2143,7 +2142,7 @@
     (pin "22" (uuid e946ba11-3b60-4f20-85a9-0e64a9d485b5))
     (pin "8" (uuid 200c6a29-b57a-4754-9778-e3c9cab7c708))
     (pin "9" (uuid 9a600bab-5284-4187-afa8-5e7bf1e72844))
-    (pin "SH" (uuid b99ec7a8-1021-4e15-9e91-0e4983722d70))
+    (pin "SH" (uuid b99ec7a8-1021-4e15-9e91-0e4983722d72))
     (instances
       (project "ecevr-proto"
         (path "/53719fc4-141e-4c58-98cd-ab3bf9a4e1c0/00000000-0000-0000-0000-000060e70f2c/00000000-0000-0000-0000-000060dc28bd"
@@ -2561,7 +2560,7 @@
     (pin "5" (uuid b152f802-222d-4647-bbd3-b50af391b2fc))
     (pin "6" (uuid 3b8c96e6-7a72-4d26-aaa1-a85cf08b5f99))
     (pin "7" (uuid 83e99d25-54b0-4e03-9c0d-8380df05659a))
-    (pin "SH" (uuid 685278ba-d661-4cb9-b358-627310033608))
+    (pin "SH" (uuid 685278ba-d661-4cb9-b358-62731003360a))
     (pin "10" (uuid 1c9c83fd-db66-4d7b-804a-b5197ff72397))
     (pin "11" (uuid ca6cc0a3-3790-427d-9fac-0b76dcbde16f))
     (pin "12" (uuid 4d909c1b-afb6-44e5-88ca-29ab8d64d80b))
@@ -2573,7 +2572,7 @@
     (pin "22" (uuid 6992ba8a-c40a-4960-a521-be5f041d37d1))
     (pin "8" (uuid fdfc53ff-663d-4bf8-86b9-a2dd4960f4fd))
     (pin "9" (uuid 9f3e2c7f-7a20-4c86-94f3-60da22aaee90))
-    (pin "SH" (uuid 685278ba-d661-4cb9-b358-627310033608))
+    (pin "SH" (uuid 685278ba-d661-4cb9-b358-62731003360a))
     (instances
       (project "ecevr-proto"
         (path "/53719fc4-141e-4c58-98cd-ab3bf9a4e1c0/00000000-0000-0000-0000-000060e70f2c/00000000-0000-0000-0000-000060dc28bd"

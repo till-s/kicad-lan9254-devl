@@ -6,16 +6,22 @@
 
   (lib_symbols
     (symbol "Connector:Conn_Coaxial" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0.254 3.048 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Reference" "J2001" (at 2.54 -0.635 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "Conn_Coaxial" (at 2.921 0 90)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "IO_CONN" (at 2.54 -2.9464 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "" (at 0 0 0)
+      (property "Footprint" "proj_footprints:LEMO+SMA" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" " ~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Part" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Manufacturer" "LEMO" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA" (at 0 0 0)
@@ -65,6 +71,10 @@
         (pin passive line (at 0 -5.08 90) (length 2.54)
           (name "Ext" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 2.54)
+          (name "Ext" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -483,7 +493,6 @@
     )
   )
 
-
   (junction (at 138.43 46.99) (diameter 0) (color 0 0 0 0)
     (uuid 12eac6d1-24b8-4ea7-b275-251ba8bf5245)
   )
@@ -508,6 +517,8 @@
   (junction (at 88.9 54.61) (diameter 0) (color 0 0 0 0)
     (uuid e8a7eef6-149e-4a80-9869-67336b262eab)
   )
+
+  (no_connect (at 146.05 49.53) (uuid 8d96ab21-c56a-4567-8bd5-dda59ca77a45))
 
   (wire (pts (xy 88.9 35.56) (xy 88.9 33.02))
     (stroke (width 0) (type default))
@@ -772,6 +783,7 @@
     )
     (pin "1" (uuid 2d4a9e69-a1e1-47f2-8093-1a2cef872991))
     (pin "2" (uuid 0b28c267-3cba-4535-98d8-2c374ba22d8c))
+    (pin "3" (uuid 489c4d0a-2183-456e-a8b0-adf009c058e3))
     (instances
       (project "ecevr-proto"
         (path "/53719fc4-141e-4c58-98cd-ab3bf9a4e1c0/00000000-0000-0000-0000-000060e70f2c/00000000-0000-0000-0000-000060ef9f81"

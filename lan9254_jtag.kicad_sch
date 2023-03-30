@@ -390,7 +390,7 @@
     (pin "9" (uuid 72b4b1f6-6402-4f58-af76-70a6dbf2387d))
   )
 
-  (symbol (lib_id "fmc:100nF_603") (at 137.16 69.85 180)
+  (symbol (lib_id "fmc:100nF_603") (at 137.16 69.85 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000626ad257)
     (property "Reference" "C106" (id 0) (at 143.51 71.12 0)
@@ -415,7 +415,7 @@
     (pin "2" (uuid 57ebe15f-b682-49a7-a00e-67626accd1e1))
   )
 
-  (symbol (lib_id "power:+1V8") (at 120.65 66.04 0)
+  (symbol (lib_id "power:+1V8") (at 120.65 66.04 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000626ad25f)
     (property "Reference" "#PWR?" (id 0) (at 120.65 69.85 0)
@@ -431,7 +431,7 @@
     (pin "1" (uuid 03c3bb2a-e58b-490c-ac2d-eaab5f0fe967))
   )
 
-  (symbol (lib_id "lan9254_project:GND") (at 137.16 73.66 0) (mirror y)
+  (symbol (lib_id "lan9254_project:GND") (at 137.16 73.66 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000626af406)
     (property "Reference" "#PWR?" (id 0) (at 137.16 80.01 0)
@@ -447,7 +447,7 @@
     (pin "1" (uuid bead5d8b-2710-444a-94af-19f10c3f14a7))
   )
 
-  (symbol (lib_id "lan9254_project:GND") (at 95.25 95.25 0) (mirror y)
+  (symbol (lib_id "lan9254_project:GND") (at 95.25 95.25 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000626af432)
     (property "Reference" "#PWR?" (id 0) (at 95.25 101.6 0)
